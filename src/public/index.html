@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="principal">
+        <div class="box_beautiful">
+            <h1>Login</h1>
+            <form action="/cadastrar" method="post" class="form_login">
+                <div class="form_login">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                </div>
+                <div class="form_login">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="email@hotm.com">
+                </div>
+                <div class="form_login">
+                    <label for="numero">Número:</label>
+                    <input type="tel" id="numero" name="numero" placeholder=" x xxxx-xxxx">
+                </div>
+                <div class="form_login">
+                    <label for="dataNascimento">Ano de nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" min="1920-01-01" max="2025-12-31">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+        <button onclick="buscarUsuarios()">Atualizar Lista</button>
+
+<table border="1" style="color: white; margin-top: 20px;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Número</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="tabela-corpo">
+        </tbody>
+</table>
+    </div>
+</body>
+
+</html>
